@@ -1,0 +1,29 @@
+h1{
+  font-size: 3vW;
+}
+#map {
+  height: 180px;
+  width: 100%;
+ }
+
+ #graph{
+   /*background-color:red;*/
+ }
+
+
+.heading{
+  width: 100%;
+  height: 10vh;
+  background-color:yellow;
+}
+.logga{
+  width:20%;
+  /*background-color: red;*/
+  float: left;
+  margin-right: 5%;
+
+}
+.rubrik{
+  /*background-color: green;*/
+  width: 60%;
+}
