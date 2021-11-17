@@ -11,10 +11,14 @@ h1{
  }
 
 
-
+.all{
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
 .heading{
   width: 100%;
-  height: 15px;
+  height: 8vh;
   background-color:yellow;
 }
 .logga{
@@ -27,4 +31,28 @@ h1{
 .rubrik{
   /*background-color: green;*/
   width: 60%;
+}
+
+.nothead{
+  width: 100%;
+  height: 92vh;
+  background-color: green;
+}
+.utbredning{
+  width: 50%;
+  height: 92vh;
+  background-color: orange;
+  float:left;
+}
+.graf{
+  width: 50%;
+  height: 46vh;
+  background-color: pink;
+  float:right;
+}
+.karta{
+  width: 50%;
+  height: 46vh;
+  background-color: red;
+  float:right
 }
