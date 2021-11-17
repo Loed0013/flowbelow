@@ -12,9 +12,13 @@
     var marker1= L.marker([63.8250972,20.3109672]).addTo(mymap);
     var marker6= L.marker([63.8360593,20.3163476]).addTo(mymap);
 
-    function onMarkerClick(e) {
-      alert("You clicked on a marker");
-  }
+  //Lägger till två markers som ger en popup när man klickar på dem
+  var marker1= L.marker([63.8250972,20.3109672]).addTo(mymap);
+  var marker6= L.marker([63.8360593,20.3163476]).addTo(mymap);
 
-  marker1.on('click', onMarkerClick);
-  marker6.on('click', onMarkerClick);
+  function onMarkerClick(e) {
+    alert("You clicked on a marker");
+      }
+      marker1.on('click', onMarkerClick);
+      marker6.on('click', onMarkerClick);
+      marker6.bindPopup("<a href=sensor6.html>Sensor6</a>").openPopup();
