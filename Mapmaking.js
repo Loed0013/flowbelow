@@ -8,9 +8,6 @@
     tileSize: 512,
     zoomOffset: -1
   }).addTo(mymap);
-//Lägger till två markers som ger en popup när man klickar på dem
-    var marker1= L.marker([63.8250972,20.3109672]).addTo(mymap);
-    var marker6= L.marker([63.8360593,20.3163476]).addTo(mymap);
 
   //Lägger till två markers som ger en popup när man klickar på dem
   var marker1= L.marker([63.8250972,20.3109672]).addTo(mymap);
