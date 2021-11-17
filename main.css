@@ -2,7 +2,7 @@ h1{
   font-size: 3vW;
 }
 #map {
-  height: 180px;
+  height: 300px;
   width: 100%;
  }
 
@@ -13,7 +13,7 @@ h1{
 
 .heading{
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   background-color:yellow;
 }
 .logga{
