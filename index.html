@@ -14,11 +14,14 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+      <!--- Function to create a map --->
+      <script src="Mapmaking.js"></script>
     <!--- p5 --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js" type="text/javascript"></script>
     <!--- två oklara --->
     <script src="https://unpkg.com/mappa-mundi@0.0.5/dist/mappa.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+
 
 
 </head>
@@ -51,13 +54,13 @@
                         Om sidan
                     </a>
                 </li>
-                
+
                 <li class="nav-item active ">
                     <a href="#" class="nav-link">
                         Logga in
                     </a>
                 </li>
-                
+
             </ul>
         </div>
 
@@ -67,7 +70,9 @@
 
      <!--- Karta--->
     <div id="map" ></div>
-    <script src="Mapmaking.js"></script>
+    <script type = "text/javascript">
+    makemap("map")
+    </script>
     <script>
         window.dispatchEvent(new Event('resize'));
     </script>
