@@ -71,7 +71,8 @@
      <!--- Karta--->
     <div id="map" ></div>
     <script type = "text/javascript">
-    makemap("map")
+    var mymap = L.map("map").setView([63.834219,20.315930], 13);
+    makemap(mymap)
     </script>
     <script>
         window.dispatchEvent(new Event('resize'));
