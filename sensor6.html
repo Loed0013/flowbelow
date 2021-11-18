@@ -65,14 +65,17 @@
   <div class="nothead">
     <div id="utbredning"></div>
     <script type = "text/javascript">
-    makemap("utbredning")
+      var utbredning = L.map("utbredning").setView([63.834219,20.315930], 13);
+      makemap(utbredning)
+      L.imageOverlay("Sensor_id_6_waterlevel_28.1.jpg"[[63.840276803,20.285897344],[63.816073067,20.340701222]]).addTo(utbredning);
     </script>
     <div class="graf">
       <canvas id="Chart" width="100%" height="100%"></canvas>
     </div>
     <div id="karta"></div>
     <script type = "text/javascript">
-    makemap("karta")
+      var karta = L.map("karta").setView([63.834219,20.315930], 13);
+      makemap(karta)
     </script>
 
   </div>
