@@ -18,17 +18,24 @@ async function chartIt(){
     },options: {
         onClick: (e) => {
           const canvasPosition = Chart.helpers.getRelativePosition(e, myChart);
+          
 
           // Substitute the appropriate scale IDs
           const dataX = myChart.scales.x.getValueForPixel(canvasPosition.x);
           const dataY = myChart.scales.y.getValueForPixel(canvasPosition.y);
           return dataY
+
         }
 
       //Länk med mer info:  https://www.chartjs.org/docs/latest/configuration/interactions.html#event-option
   }
   });
 }
+
+canvas.onclick = function (evt) {
+  var points = chart.getPointsAtEvent(evt);
+  alert(chart.datasets[0].points.indexOf(points[0]));
+};
 
 
   async function getLevelData(){
